@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #1e90ff, #87ceeb);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .skills, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills div, .contact div {
+            background-color: #d9efff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #1e90ff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>A Passionate Professional with Diverse Skills</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a creative and versatile professional skilled in multiple domains. With a strong foundation in technology, arts, and culinary expertise, I bring a unique blend of creativity and logic to everything I do.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>Cooking</div>
+            <div>C++ Coding</div>
+            <div>Writing Books</div>
+            <div>Graphic Designing</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Graduate from IIIT, specializing in Computer Science.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Developed an innovative application for a leading company, streamlining their operations and improving efficiency.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>Won first place in a district-level drawing competition, showcasing exceptional artistic talent.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me:</p>
+        <p>Phone: 9820475855</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
